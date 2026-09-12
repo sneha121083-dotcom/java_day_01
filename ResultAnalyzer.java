@@ -33,7 +33,6 @@ public class ResultAnalyzer {
         // 7. Checking whether the student deserves a special award (e.g., scoring 100 in any subject)
         boolean deservesSpecialAward = subject1 == 100 || subject2 == 100 || subject3 == 100;
 
-        // Determining final status string
         String status;
         if (isPassed) {
             if (isDistinction) {
@@ -45,7 +44,7 @@ public class ResultAnalyzer {
             status = "Failed";
         }
 
-        // 8. Displaying the final result
+        // 8. Displaying result
         System.out.println("\n=================================");
         System.out.println("      STUDENT RESULT REPORT      ");
         System.out.println("=================================");
@@ -60,8 +59,7 @@ public class ResultAnalyzer {
             System.out.println("Special Award: No");
         }
         System.out.println("=================================");
-
-        // Close the scanner
+        
         scanner.close();
     }
 }
